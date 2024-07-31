@@ -1456,7 +1456,6 @@ metriche.</block>
   <block id="a84a64b02579dc14f89cbfdf30b6e938" category="list-text">È possibile specificare il periodo di conservazione dei log con<block ref="86339c2ed773d5bd944b82d3086d3477" prefix=" " category="inline-code"></block> allarme. Ad esempio:<block ref="e238339d491d4840f7d8e509bdbb7b63" prefix=" " category="inline-code"></block>. Queste informazioni vengono raccolte e inviate tramite un<block ref="9d80ca17f097c8e365550f4036ccf0e3" prefix=" " category="inline-code"></block> container
 Che viene installato insieme ad Astra Trident. È possibile ottenere l'immagine del contenitore in<block ref="1b00454f0ab35dcec2ee1a0061efc6e5" category="inline-link-rx"></block>.</block>
   <block id="53084cad3d11df800502598c11e2d10b" category="inline-link">EULA</block>
-  <block id="b9a52e8d1e9b14b8825c6ea01c0ce6d6" category="list-text">Trident AutoSupport non raccoglie né trasmette dati personali o di identificazione personale (PII). Viene fornito con un<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> Non applicabile all'immagine del contenitore Trident. Scopri di più sull'impegno di NetApp per la sicurezza e la fiducia dei dati<block ref="8470ff535916bda3f4ea4723647a7135" category="inline-link-rx"></block>.</block>
   <block id="89f0f2832f60f480805faf638848c5b7" category="paragraph">Un payload di esempio inviato da Astra Trident è simile al seguente:</block>
   <block id="d2ec86f126f845e79aff07e70bf89472" category="list-text">I messaggi AutoSupport vengono inviati all'endpoint AutoSupport di NetApp. Se si utilizza un registro privato per memorizzare le immagini container, è possibile utilizzare<block ref="53b228c1c8295f49b0c35325e14fcd6a" prefix=" " category="inline-code"></block> allarme.</block>
   <block id="86c5a11fba83815412aec79f67f2d276" category="list-text">È inoltre possibile configurare gli URL proxy generando i file YAML di installazione. Per eseguire questa operazione, utilizzare<block ref="758aee5ba3aed3d4e9a31a16ea04b47a" prefix=" " category="inline-code"></block> Per creare i file YAML e aggiungere<block ref="46f08f4431bbd907a039e14ddf39cf5f" prefix=" " category="inline-code"></block> argomento per<block ref="9d80ca17f097c8e365550f4036ccf0e3" prefix=" " category="inline-code"></block> container in<block ref="eb6cdeddd28243c1552ea3b1061b4410" prefix=" " category="inline-code"></block>.</block>
@@ -1532,7 +1531,6 @@ container.</block>
   <block id="f1cfea5f1444de607dfa549b3aa57010" category="inline-link-macro">Condivisione di volumi tra spazi dei nomi: Dai il benvenuto all'accesso a volumi tra spazi dei nomi</block>
   <block id="2780f690b7670efc296ac19ef3029d0c" category="list-text">Visitare il sito <block ref="b0d29f1b2abb2cc552e4cc47177582ef" category="inline-link-macro-rx"></block>.</block>
   <block id="96e1384807331548bf745acde0fe1b73" category="inline-link-macro">NetAppTV</block>
-  <block id="414883f8b6ef58c7b3b37e66fbfd482f" category="list-text">Guarda la demo su <block ref="1945a2d4809e81668f29485f6ae1bbc8" category="inline-link-macro-rx"></block>.</block>
   <block id="c109878131f34375d85b7eff9721dcde" category="summary">Scopri come creare e utilizzare un backend Element con l'installazione di Astra Trident.</block>
   <block id="62233a6f2ba54c1dcede120348a6f595" category="paragraph">Scopri come creare e utilizzare un backend di elementi con la tua installazione Astra Trident.</block>
   <block id="4e7d6286f837d54a4e4154d4b21b0659" category="section-title">Dettagli driver elemento</block>
@@ -2534,10 +2532,6 @@ esiste.</block>
   <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
   <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
   <block id="55559f520040667d3f8931728b37ef07" category="paragraph">Versioni precedenti alla 21.07, reindirizzare al sito di documentazione legacy.</block>
-  <block id="0c141ec81d4107f4c63fb0deb2531c0d" category="inline-link">Astra Trident 21.04</block>
-  <block id="193bfae1ebda99fb7289c66fa69395a0" category="list-text"><block ref="193bfae1ebda99fb7289c66fa69395a0" category="inline-link-rx"></block></block>
-  <block id="cba2c660d905f83e39a0d1771286c9e7" category="inline-link">Astra Trident 21.01</block>
-  <block id="97f32ab1a5165dc49105dca53b9f4de7" category="list-text"><block ref="97f32ab1a5165dc49105dca53b9f4de7" category="inline-link-rx"></block></block>
   <block id="ee50ce7340da5b018abe62c8e613cae0" category="summary">Astra Trident espone diverse opzioni della riga di comando per Trident orchestrator e comunica su determinate porte.</block>
   <block id="7d4fab76513c90b603a722620cde60fe" category="doc">Opzioni della riga di comando</block>
   <block id="94efe0c9471991c69d2a3b0970a56744" category="paragraph">Astra Trident espone diverse opzioni della riga di comando per Trident orchestrator. È possibile utilizzare queste opzioni per modificare la distribuzione.</block>
@@ -3586,7 +3580,6 @@ Vedere <block ref="2e905590b15db776a189c7b5f90d9174" category="inline-link-macro
   <block id="65840df7365892d2abe1280cb6cdb1d2" category="paragraph">Di seguito sono elencate alcune delle Best practice. Eseguire una ricerca in<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> per le versioni più recenti.</block>
   <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="paragraph">*ONTAP*</block>
   <block id="f9dd52d280693dc59e53b6e1fb7bd801" category="inline-link">Guida alle Best practice e all'implementazione di NFS</block>
-  <block id="40bb23d54df7f59219c18f15a346d9e5" category="list-text"><block ref="40bb23d54df7f59219c18f15a346d9e5" category="inline-link-rx"></block></block>
   <block id="a76193f5d9397d9c49ca283a20ccf649" category="inline-link">GUIDA all'amministrazione SAN</block>
   <block id="5bc9b097037d45aff954bf9bd632d4a4" category="list-text"><block ref="c745f55eb0c9991966e63f0608541bb1" category="inline-link-rx"></block> (Per iSCSI)</block>
   <block id="5ca34d6ffc2a555b689542e3fbeeb7af" category="inline-link">Configurazione iSCSI Express per RHEL</block>
@@ -3601,15 +3594,11 @@ Vedere <block ref="2e905590b15db776a189c7b5f90d9174" category="inline-link-macro
   <block id="9d0da73b02655dd7861121905db229e2" category="list-text"><block ref="9d0da73b02655dd7861121905db229e2" category="inline-link-rx"></block></block>
   <block id="9aaca8cfd79770bc4944ccc477e37141" category="paragraph">*Informazioni sulle Best practice applicative*</block>
   <block id="27a5e02bc2fadee43ace94805739a0c8" category="inline-link">Best practice per MySQL su ONTAP</block>
-  <block id="40d2eaf9adabe99a601c57eabf49e4d3" category="list-text"><block ref="40d2eaf9adabe99a601c57eabf49e4d3" category="inline-link-rx"></block></block>
   <block id="17efdd7d210511985714be299d595292" category="inline-link">Best practice per MySQL su SolidFire</block>
   <block id="d03b53d8ec563c37e16ee8c900a75b96" category="list-text"><block ref="d03b53d8ec563c37e16ee8c900a75b96" category="inline-link-rx"></block></block>
   <block id="3aefe1a041af945f1fe8673bf775057b" category="inline-link">NetApp SolidFire e Cassandra</block>
-  <block id="7e2b19f6f6bd1332efe1f7a698984670" category="list-text"><block ref="7e2b19f6f6bd1332efe1f7a698984670" category="inline-link-rx"></block></block>
   <block id="6e580111d3a8c12cdcd9522a4d3484c6" category="inline-link">Best practice Oracle su SolidFire</block>
-  <block id="6db96715cefe9c4950ef722865494128" category="list-text"><block ref="6db96715cefe9c4950ef722865494128" category="inline-link-rx"></block></block>
   <block id="6448cf37496207be126495e5b05851de" category="inline-link">Best practice PostgreSQL su SolidFire</block>
-  <block id="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="list-text"><block ref="eb2c92a9d2d39fa7191d6e84d5c33bb5" category="inline-link-rx"></block></block>
   <block id="b062996d6ca590abe798d3db75561f79" category="paragraph">Non tutte le applicazioni hanno linee guida specifiche, è importante collaborare con il team NetApp e utilizzare<block ref="4caccef7312f2c398bfbb419629c1a78" category="inline-link-rx"></block> per trovare la documentazione più aggiornata.</block>
   <block id="b56253bf92505bda20b38657c778bccf" category="doc">Il titolo della pagina va qui</block>
   <block id="5d9328ee3f628e51f1a4f871ccff7313" category="paragraph">Utilizza questo modello per articoli, argomenti e qualsiasi cosa tu li chiami. Il file index.adoc non contiene le parole chiave corrette per una pagina di articolo e l'utilizzo come modello può causare problemi di pubblicazione in seguito.</block>
@@ -4207,4 +4196,11 @@ Utilizzare per selezionare<block ref="39eea648dab96b0ee6022dabb38bc420" prefix="
   <block id="c91cf7abea9584bc1edbc8ff4948ada0" category="sidebar">Integrazione di Astra Trident</block>
   <block id="301ebdf8067a213d5a55c65fbb488290" category="sidebar">Consigli sulla sicurezza</block>
   <block id="e08bfc79c5202517b3814efd6e82fb2c" category="sidebar">Aggiornare o disinstallare Trident</block>
+  <block id="190dbae19c88b1e68bf03f7783c5d5d1" category="list-text"><block ref="190dbae19c88b1e68bf03f7783c5d5d1" category="inline-link-rx"></block></block>
+  <block id="430c6bcb8516befc45fb8173b0ca4e1f" category="list-text"><block ref="430c6bcb8516befc45fb8173b0ca4e1f" category="inline-link-rx"></block></block>
+  <block id="d7d36869f2f4aa1eb99a10008e153f20" category="list-text"><block ref="d7d36869f2f4aa1eb99a10008e153f20" category="inline-link-rx"></block></block>
+  <block id="f8b52d963f246a75dc6c8b78c954a4fd" category="list-text"><block ref="f8b52d963f246a75dc6c8b78c954a4fd" category="inline-link-rx"></block></block>
+  <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
+  <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport non raccoglie né trasmette dati personali o di identificazione personale (PII). Viene fornito con un<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> che non è applicabile all'immagine contenitore Trident stessa. Puoi saperne di più sull'impegno di NetApp nei confronti della sicurezza e della fiducia dei dati<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>.</block>
+  <block id="5ff83dbc70e496ea22b38ea61bb69f05" category="list-text">Guarda la demo su <block ref="c27441bbbe62adf51ae6ecec41fde8bd" category="inline-link-macro-rx"></block>.</block>
 </blocks>
