@@ -165,8 +165,6 @@ Conferma che i servizi NFS/iSCSI sono disponibili sui nodi di lavoro.</block>
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">Standard di sicurezza Pod</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">Un nuovo <block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block> (PSS) è stata aggiunta la sezione che descrive i permessi abilitati da Astra Trident durante l'installazione.</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">Cambiamenti nel 22.04</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="inline-link">Versioni precedenti della documentazione</block>
-  <block id="368b120a3b5f53a49dc3ab96ec9b8dbd" category="paragraph">NetApp continua a migliorare e migliorare i propri prodotti e servizi. Ecco alcune delle funzionalità più recenti di Astra Trident. Per le release precedenti, vedere<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>.</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">Se si esegue l'aggiornamento da una release precedente di Trident e si utilizza Azure NetApp Files, il <block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block> il parametro di configurazione è ora un campo singleton obbligatorio.</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">Numero GitHub 681</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">Analisi migliorata dei nomi degli iniziatori iSCSI. (<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block>)</block>
@@ -2045,8 +2043,6 @@ Non supportato da ontap-nas-Economy.</block>
   <block id="87459c33b1692755deb4b22c7eaa864c" category="section-title">Fase 1: Selezionare una versione</block>
   <block id="ecab08714a2cb76336fb5fe50c888c56" category="paragraph">Le versioni di Astra Trident seguono una data-based<block ref="fb6921a005d395f9482cdac0306d4935" prefix=" " category="inline-code"></block> Convenzione di naming, dove "YY" è l'ultima cifra dell'anno e "MM" è il mese. I rilasci di punti seguono un<block ref="d93ec759c4a0e8c1cf9c7653b2939656" prefix=" " category="inline-code"></block> convention, dove "X" è il livello di patch. Selezionare la versione a cui eseguire l'aggiornamento in base alla versione da cui si sta eseguendo l'aggiornamento.</block>
   <block id="24b34ec4720df5e6dd4a09f584b074b5" category="list-text">È possibile eseguire un aggiornamento diretto a qualsiasi release di destinazione che si trova all'interno di una finestra di quattro release della versione installata. Ad esempio, è possibile aggiornare direttamente da 22,10 (o qualsiasi versione a 22,10 punti) a 23,10.</block>
-  <block id="2251733916a92fc0c61d943165128928" category="inline-link-macro">versione precedente</block>
-  <block id="87ad4a061085ee86c22b68e7534ecdf3" category="list-text">Se si sta eseguendo l'aggiornamento da una release al di fuori della finestra a quattro release, eseguire un aggiornamento in più fasi. Seguire le istruzioni di aggiornamento di <block ref="a799aa6eaf3a5192b34ea19f24bb716f" category="inline-link-macro-rx"></block> si sta eseguendo l'aggiornamento alla versione più recente che si adatta alla finestra a quattro release. Ad esempio, se si utilizza 21,10 e si desidera eseguire l'aggiornamento a 23,10:</block>
   <block id="7b136496fce84f19eb2409b46c46f701" category="list-text">Primo aggiornamento da 21,10 a 22,10.</block>
   <block id="3d2eabb16a1ecb16a8803902e234b976" category="list-text">Quindi, eseguire l'aggiornamento da 22,10 a 23,10.</block>
   <block id="199ed8c975e8bb544d18428ba17adbc3" category="inline-link">Dettagli del problema su GitHub</block>
@@ -2480,7 +2476,6 @@ esiste.</block>
   <block id="d0ebde94f92d8c1bae0c6660a5847bba" category="paragraph">Il tuo <block ref="57de9a35aeedde82408b1e047030d221" category="inline-link-macro-rx"></block> Può trovarsi in un registro o in registri diversi, ma tutte le immagini CSI devono trovarsi nello stesso registro. Aggiornare<block ref="7b4b81fb05ca7f2a09fe73526ac95482" prefix=" " category="inline-code"></block> per aggiungere le specifiche di posizione aggiuntive in base alla configurazione del registro di sistema.</block>
   <block id="5295ac8fb520b71deb8a1b57857b2562" category="section-title">Fase 6: Creare<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> E installare Trident</block>
   <block id="60b02b15eaf058a3b9da12633792321f" category="paragraph">Ora è possibile creare<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> E installare Astra Trident. Se lo si desidera, è possibile fare di più <block ref="af79c767b326b6188dbe7366c85a8007" category="inline-link-macro-rx"></block> utilizzando gli attributi in<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> spec. L'esempio seguente mostra un'installazione in cui le immagini Trident e CSI si trovano in diversi registri.</block>
-  <block id="d8ae7c2797a2c93034174a911af883b7" category="summary">Astra Trident è un provider di storage open source e orchestrator gestito da NetApp. Consente di creare volumi di storage per applicazioni containerizzate gestite da Docker e Kubernetes. **Leggere le note di rilascio per informazioni critiche sull'aggiornamento a Astra Trident 23,10.**</block>
   <block id="749d47fd9d677c51bfd2eedc329f4622" category="doc">Documentazione di Astra Trident 23,10</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Note legali</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.</block>
@@ -2500,25 +2495,7 @@ esiste.</block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
   <block id="0172b29a9f5d94dc62ee592a98183f3b" category="paragraph">È possibile consultare il copyright e le licenze di terze parti utilizzate nel software NetApp per Astra Trident nel file degli avvisi per ciascuna release all'indirizzo<block ref="4a3c8c5a408c6db1c44c04391a8a0a2f" category="inline-link-rx"></block>.</block>
-  <block id="17c5eeb01739643b5aef94fe18b6c849" category="summary">È possibile utilizzare il selettore della versione per passare dalla versione più recente alle quattro versioni precedenti o utilizzare i collegamenti riportati di seguito.</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="section-title">Versioni precedenti</block>
   <block id="1c62ad76355c68d0de5faf475ab1861e" category="inline-link-macro">Ciclo di vita del supporto di Astra Trident</block>
-  <block id="4c326d958c0bd182aa53c9e9bba722ad" category="paragraph">Se non utilizzi Astra Trident 23,10, la documentazione per le release precedenti è disponibile in base a. <block ref="6e1ac221c7aa10f6bb30cbfd51cb3204" category="inline-link-macro-rx"></block>.</block>
-  <block id="6933dffe806f29980dbedda6aef6fda7" category="inline-link">Astra Trident 23,07</block>
-  <block id="5190d8b9f5b246f225722ffa2f20e6b3" category="list-text"><block ref="5190d8b9f5b246f225722ffa2f20e6b3" category="inline-link-rx"></block></block>
-  <block id="35e136dc2ee53639294dbf7dbadf4436" category="inline-link">Astra Trident 23,04</block>
-  <block id="b409a213a2362e60968efbd1c87c6713" category="list-text"><block ref="b409a213a2362e60968efbd1c87c6713" category="inline-link-rx"></block></block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
-  <block id="55559f520040667d3f8931728b37ef07" category="paragraph">Versioni precedenti alla 21.07, reindirizzare al sito di documentazione legacy.</block>
   <block id="ee50ce7340da5b018abe62c8e613cae0" category="summary">Astra Trident espone diverse opzioni della riga di comando per Trident orchestrator e comunica su determinate porte.</block>
   <block id="7d4fab76513c90b603a722620cde60fe" category="doc">Opzioni della riga di comando</block>
   <block id="94efe0c9471991c69d2a3b0970a56744" category="paragraph">Astra Trident espone diverse opzioni della riga di comando per Trident orchestrator. È possibile utilizzare queste opzioni per modificare la distribuzione.</block>
@@ -3606,34 +3583,16 @@ Vedere <block ref="2e905590b15db776a189c7b5f90d9174" category="inline-link-macro
   <block id="a880ae57450a3d9e2d8dd4c89d54126f" category="list-text">La documentazione di Astra Trident è disponibile per i mesi dal 25 al 36 dalla data di rilascio.</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">Versione</block>
   <block id="766995a062c6503acd7ac4752fbb865d" category="inline-link-macro">23,10</block>
-  <block id="dc06f206c9849143297835dcc6240a1d" category="paragraph"><block ref="dc06f206c9849143297835dcc6240a1d" category="inline-link-macro-rx"></block></block>
-  <block id="09ea156cd1da2f7e3fda8aefab96074a" category="cell">Ottobre 2024</block>
-  <block id="99dfa28920a40a7be0858c50f989a3e5" category="cell">Ottobre 2025</block>
   <block id="78c875172f37f031a2632dc008815ee1" category="cell">Ottobre 2026</block>
   <block id="217af7d1776d22530d98be04d104fd49" category="inline-link-macro">23,07</block>
-  <block id="45c5d0a80197b87cde19915df9356724" category="paragraph"><block ref="45c5d0a80197b87cde19915df9356724" category="inline-link-macro-rx"></block></block>
-  <block id="f66bc2df80ac37f354b591907be92e18" category="cell">Luglio 2024</block>
-  <block id="928f12ce7e1197fe962e09f979b98d0d" category="cell">Luglio 2025</block>
   <block id="a257f7f4b2f6e07845ce567df142ad00" category="cell">Luglio 2026</block>
   <block id="1a3a2b5e6c52142797bb5c00594e2a3c" category="inline-link-macro">23.04</block>
   <block id="4f00a05b361ef580687832a6a48984db" category="paragraph"><block ref="4f00a05b361ef580687832a6a48984db" category="inline-link-macro-rx"></block></block>
-  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="cell">Aprile 2024</block>
-  <block id="42ce83dc3f5ef22d986311b267a5ac20" category="cell">Aprile 2025</block>
   <block id="fc7d05f9009e90b92a15aad926bca249" category="cell">Aprile 2026</block>
   <block id="8dfda84fc7f59655e20a770603bf9231" category="inline-link-macro">23,01</block>
   <block id="e0ed61e44672f0b6193055dd0719d240" category="paragraph"><block ref="e0ed61e44672f0b6193055dd0719d240" category="inline-link-macro-rx"></block></block>
-  <block id="efe846805e5476fec607bbf54e45dc44" category="cell">Gennaio 2024</block>
-  <block id="9dd6e3f1271bf8cdcd9a0becace5f06f" category="cell">Gennaio 2025</block>
   <block id="7022ed6df71cc12fbd0576cef4df23fd" category="cell">Gennaio 2026</block>
-  <block id="775d4bb28d257a6aa23992563a82c458" category="inline-link-macro">22,10</block>
-  <block id="1d064e71d708bc66779c604db1339850" category="paragraph"><block ref="1d064e71d708bc66779c604db1339850" category="inline-link-macro-rx"></block></block>
   <block id="cfab1ba8c67c7c838db98d666f02a132" category="cell">--</block>
-  <block id="b321f6c1ada34a3fa850996d673e01ca" category="inline-link-macro">22,07</block>
-  <block id="295e1f077ca9f1e68f56c558741bad74" category="paragraph"><block ref="295e1f077ca9f1e68f56c558741bad74" category="inline-link-macro-rx"></block></block>
-  <block id="e764fe6b8f8825a307a87cedbef45678" category="inline-link-macro">22.04</block>
-  <block id="865d5fc74524e198b7d4edc0b0f93cd6" category="paragraph"><block ref="865d5fc74524e198b7d4edc0b0f93cd6" category="inline-link-macro-rx"></block></block>
-  <block id="955ddf0f7e289ee80cdea4b5324b620d" category="inline-link-macro">22,01</block>
-  <block id="1d6d13ec4b4db5f5d3487f7624ba2730" category="paragraph"><block ref="1d6d13ec4b4db5f5d3487f7624ba2730" category="inline-link-macro-rx"></block></block>
   <block id="40e41fb2db11266b8f751c0d5c67cba0" category="inline-link">Knowledge base di NetApp (accesso richiesto)</block>
   <block id="01005ecf4349194d1ec13d0ba516c9e5" category="paragraph">Per un elenco completo degli articoli per la risoluzione dei problemi, consultare<block ref="57f5c759ada931c6a2051314ca6ee99e" category="inline-link-rx"></block>. È inoltre possibile trovare informazioni sulla risoluzione dei problemi relativi ad Astra<block ref="695f48b1d8b7348c0e2828947d24161e" category="inline-link-rx"></block>.</block>
   <block id="1cf7168782187634fbc408c66b895dbc" category="section-title">Sostegno della community</block>
@@ -4208,4 +4167,9 @@ Utilizzare per selezionare<block ref="39eea648dab96b0ee6022dabb38bc420" prefix="
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">Il seguente esempio importa un volume da 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> denominato<block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block> dal backend<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block> con modalità di accesso RWO impostata tramite annotazioni PVC:</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">Il seguente esempio importa 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> volume denominato<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block> dal backend<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block> con modalità di accesso RWO impostata tramite annotazioni PVC:</block>
   <block id="3a175f8153aad5b64492df6eadb5a5af" category="paragraph">I seguenti esempi mostrano come importare volumi gestiti e non gestiti:</block>
+  <block id="bcb8f00239af2cecd5a6b534dabea922" category="paragraph"><block ref="bcb8f00239af2cecd5a6b534dabea922" category="inline-link-macro-rx"></block></block>
+  <block id="62bc04158f931e9b0a26f5676c8ab043" category="paragraph"><block ref="62bc04158f931e9b0a26f5676c8ab043" category="inline-link-macro-rx"></block></block>
+  <block id="b2e379c67ddc95cce4f2536ff9aafd04" category="list-text">Se stai eseguendo l'aggiornamento da una versione al di fuori della finestra di quattro release, esegui un aggiornamento in più fasi. Utilizza le istruzioni di aggiornamento per la versione precedente da cui stai eseguendo l'aggiornamento per passare alla versione più recente che rientra nella finestra di quattro release. Ad esempio, se stai utilizzando la versione 21.10 e desideri eseguire l'aggiornamento alla versione 23.10:</block>
+  <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp migliora e perfeziona costantemente i suoi prodotti e servizi. Ecco alcune delle ultime funzionalità di Astra Trident. Per le versioni precedenti, consultare la documentazione delle versioni precedenti.</block>
+  <block id="64380aa7bd3c4e99aca31888f9ed6cc0" category="sidebar">Astra Trident è un sistema open source di provisioning e orchestrazione dello storage, gestito da NetApp. Consente di creare volumi di storage per applicazioni containerizzate gestite da Docker e Kubernetes. **Leggere le note di rilascio per informazioni importanti sull'aggiornamento ad Astra Trident 23.10.**</block>
 </blocks>
