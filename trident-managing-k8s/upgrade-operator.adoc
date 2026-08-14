@@ -12,16 +12,17 @@ summary: 'È possibile aggiornare facilmente un"installazione Astra Trident util
 
 
 [role="lead"]
-È possibile eseguire l'aggiornamento di Astra Trident utilizzando l'operatore Trident sia manualmente che tramite Helm. È possibile eseguire l'aggiornamento da un'installazione dell'operatore Trident a un'altra installazione dell'operatore Trident o da un `tridentctl` Installazione su una versione dell'operatore Trident. Revisione link:upgrade-trident.html#select-an-upgrade-method["Selezionare un metodo di aggiornamento"] Prima di aggiornare un'installazione dell'operatore Trident.
+Puoi aggiornare Astra Trident usando l'operatore Trident, sia manualmente che tramite Helm. Puoi eseguire l'aggiornamento da un'installazione dell'operatore Trident a un'altra installazione dell'operatore Trident oppure aggiornare da un'installazione  `tridentctl` a una versione dell'operatore Trident. Consulta link:upgrade-trident.html#step-3-select-an-upgrade-method["Selezionare un metodo di aggiornamento"] prima di aggiornare un'installazione dell'operatore Trident.
 
 
 
+[[upgrade-a-manual-installation]]
 == Aggiornare un'installazione manuale
 
 È possibile eseguire l'aggiornamento da un'installazione dell'operatore Trident definita dall'ambito del cluster a un'altra installazione dell'operatore Trident definita dal cluster. Tutte le versioni di Astra Trident 21.01 e successive utilizzano un operatore con ambito cluster.
 
 
-NOTE: Per l'aggiornamento da Astra Trident che è stato installato usando l'operatore con ambito namespace (versioni da 20,07 a 20,10), usa le istruzioni di upgrade per link:../earlier-versions.html["versione installata"] Di Astra Trident.
+NOTE: Per eseguire l'aggiornamento da Astra Trident installato utilizzando l'operatore namespace-scoped (versioni dalla 20.07 alla 20.10), usa le istruzioni di aggiornamento per la versione di Trident che hai installato.
 
 .A proposito di questa attività
 Trident fornisce un file bundle da utilizzare per installare l'operatore e creare oggetti associati per la versione di Kubernetes.
@@ -58,6 +59,7 @@ kubectl create -f 23.10.0/trident-installer/deploy/<bundle.yaml> -n trident
 
 
 
+[[upgrade-a-helm-installation]]
 == Aggiornare un'installazione Helm
 
 È possibile aggiornare un'installazione di Astra Trident Helm.
@@ -66,7 +68,7 @@ kubectl create -f 23.10.0/trident-installer/deploy/<bundle.yaml> -n trident
 WARNING: Quando si aggiorna un cluster Kubernetes dalla versione 1.24 alla 1.25 o successiva su cui è installato Astra Trident, è necessario aggiornare values.yaml per impostarlo `excludePodSecurityPolicy` a. `true` oppure aggiungi `--set excludePodSecurityPolicy=true` al `helm upgrade` prima di aggiornare il cluster.
 
 .Fasi
-. Se link:../trident-get-started/kubernetes-deploy-helm.html#deploy-the-trident-operator-and-install-astra-trident-using-helm["Installato Astra Trident utilizzando Helm"], è possibile utilizzare `helm upgrade trident netapp-trident/trident-operator --version 23.10.0` per eseguire l'aggiornamento in un solo passaggio. Se non è stato aggiunto il repo Helm o non è possibile utilizzarlo per l'aggiornamento:
+. Se link:../trident-install/kubernetes-deploy-helm.html#deploy-the-trident-operator-and-install-astra-trident-using-helm["Installato Astra Trident utilizzando Helm"], puoi usare  `helm upgrade trident netapp-trident/trident-operator --version 23.10.0` per aggiornare in un unico passaggio. Se non hai aggiunto il Helm repo o non puoi usarlo per aggiornare:
 +
 .. Scarica la versione più recente di Astra Trident da link:https://github.com/NetApp/trident/releases/latest["La sezione _Assets_ su GitHub"^].
 .. Utilizzare `helm upgrade` comando dove `trident-operator-23.10.0.tgz` indica la versione alla quale si desidera eseguire l'aggiornamento.
@@ -86,12 +88,13 @@ NOTE: Se si impostano opzioni personalizzate durante l'installazione iniziale (a
 
 
 
+[[upgrade-from-a-tridentctl-installation-to-trident-operator]]
 == Aggiornamento da a. `tridentctl` Installazione all'operatore Trident
 
 È possibile eseguire l'aggiornamento all'ultima versione dell'operatore Trident da un `tridentctl` installazione. I backend e i PVC esistenti saranno automaticamente disponibili.
 
 
-NOTE: Prima di passare da un metodo di installazione all'altro, vedere link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["Passaggio da un metodo di installazione all'altro"]
+NOTE: Prima di passare da un metodo di installazione all'altro, dai un'occhiata a link:../trident-install/kubernetes-deploy.html#moving-between-installation-methods["Passaggio da un metodo di installazione all'altro"]
 
 .Fasi
 . Scarica l'ultima release di Astra Trident.

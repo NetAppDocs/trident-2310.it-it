@@ -15,7 +15,7 @@ summary: Devi utilizzare lo stesso metodo per disinstallare Astra Trident che ha
 Devi utilizzare lo stesso metodo per disinstallare Astra Trident che hai utilizzato per installare Astra Trident.
 
 .A proposito di questa attività
-* Se hai bisogno di una correzione per i bug osservati dopo un aggiornamento, problemi di dipendenza o un aggiornamento non riuscito o incompleto, devi disinstallare Astra Trident e reinstallare la versione precedente utilizzando le istruzioni specifiche per questo link:../earlier-versions.html["versione"]. Questo è l'unico modo consigliato per _eseguire il downgrade_ a una versione precedente.
+* Se hai bisogno di una soluzione per bug riscontrati dopo un aggiornamento, problemi di dipendenza o un aggiornamento non riuscito o incompleto, dovresti disinstallare Astra Trident e reinstallare la versione precedente seguendo le istruzioni specifiche per quella versione. Questo è l'unico metodo consigliato per effettuare il downgrade a una versione precedente.
 * Per semplificare l'aggiornamento e la reinstallazione, la disinstallazione di Astra Trident non rimuove i CRD o gli oggetti correlati creati da Astra Trident. Se devi rimuovere completamente Astra Trident e tutti i suoi dati, vedi link:../troubleshooting.html#completely-remove-astra-trident-and-crds["Rimuovere completamente Astra Trident e i CRD"].
 
 
@@ -24,6 +24,7 @@ Se stai decommissionando i cluster Kubernetes, devi eliminare tutte le applicazi
 
 
 
+[[determine-the-original-installation-method]]
 == Determinare il metodo di installazione originale
 
 Utilizzare lo stesso metodo per disinstallare Astra Trident che è stato utilizzato per installarlo. Prima di disinstallare, verificare quale versione è stata utilizzata per installare originariamente Astra Trident.
@@ -44,12 +45,14 @@ Utilizzare lo stesso metodo per disinstallare Astra Trident che è stato utilizz
 
 
 
+[[uninstall-a-trident-operator-installation]]
 == Disinstallare un'installazione dell'operatore Trident
 
 È possibile disinstallare manualmente un'installazione dell'operatore tridente o utilizzando Helm.
 
 
 
+[[uninstall-manual-installation]]
 === Disinstallare l'installazione manuale
 
 Se Astra Trident è stato installato utilizzando l'operatore, è possibile disinstallarlo effettuando una delle seguenti operazioni:
@@ -73,6 +76,7 @@ kubectl delete -f deploy/<bundle.yaml> -n <namespace>
 
 
 
+[[uninstall-helm-installation]]
 === Disinstallare l'installazione di Helm
 
 Se Astra Trident è stato installato utilizzando Helm, è possibile disinstallarlo utilizzando `helm uninstall`.
@@ -90,6 +94,7 @@ release "trident" uninstalled
 ----
 
 
+[[uninstall-a-tridentctl-installation]]
 == Disinstallare un `tridentctl` installazione
 
 Utilizzare `uninstall` ingresso comando `tridentctl` Per rimuovere tutte le risorse associate a Astra Trident, ad eccezione dei CRD e degli oggetti correlati:
